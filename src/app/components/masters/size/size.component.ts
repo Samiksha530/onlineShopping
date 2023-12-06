@@ -186,7 +186,7 @@ export class SizeComponent implements OnInit, OnDestroy {
       if (result.isConfirmed) {
         this._httpService.post(environment.BASE_API_PATH + "SizeMaster/Delete/", obj).subscribe(res => {
           if (res.isSuccess) {
-            //this._toastr.success("Record Deleted !!", "Size Master");
+            //this._toastr.success("Record Deleted !!", "UserType Master");
             swalWithBootstrapButtons.fire(
               'Deleted!',
               'Your record has been deleted.',
