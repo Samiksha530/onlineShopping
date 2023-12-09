@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { InvoiceRoutingModule } from './invoice-routing.module';
 import { InvoiceComponent } from './invoice.component';
-
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,8 @@ import { InvoiceComponent } from './invoice.component';
   ],
   imports: [
     CommonModule,
-    InvoiceRoutingModule
+    InvoiceRoutingModule,
+    Ng2SmartTableModule
   ]
 })
 export class InvoiceModule { }

@@ -10,6 +10,7 @@ import { AuthModule } from './components/auth/auth.module';
 import { SharedModule } from './shared/shared.module';
 import { RequestInterceptor } from './interceptors/request.interceptor';
 import { ResponseInterceptor } from './interceptors/response.interceptor';
+import { ColumnChangesService, DimensionsHelper, ScrollbarHelper } from '@swimlane/ngx-datatable';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ResponseInterceptor } from './interceptors/response.interceptor';
     SharedModule
   ],
   providers: [
+    ScrollbarHelper, DimensionsHelper, ColumnChangesService,
     { provide: HTTP_INTERCEPTORS, useClass: RequestInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ResponseInterceptor, multi: true },
   ],
