@@ -7,10 +7,11 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthModule } from './components/auth/auth.module';
-import { SharedModule } from './shared/shared.module';
+
 import { RequestInterceptor } from './interceptors/request.interceptor';
 import { ResponseInterceptor } from './interceptors/response.interceptor';
 import { ColumnChangesService, DimensionsHelper, ScrollbarHelper } from '@swimlane/ngx-datatable';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [

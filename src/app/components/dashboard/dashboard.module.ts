@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import { CountToModule } from 'angular-count-to';
-import { SharedModule } from 'src/app/shared/shared.module';
+
 import { ReactiveFormsModule } from '@angular/forms';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,12 @@ import { Ng2GoogleChartsModule } from 'ng2-google-charts';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    SharedModule,
+
     ReactiveFormsModule,
     CountToModule,
     Ng2SmartTableModule,
-    Ng2GoogleChartsModule
+    Ng2GoogleChartsModule,
+    SharedModule
   ]
 })
 export class DashboardModule { }
