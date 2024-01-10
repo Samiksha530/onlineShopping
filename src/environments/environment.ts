@@ -2,11 +2,12 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
 export const environment = {
   production: false,
-  BASE_API_PATH : "http://sahosoftweb.com/test/api/",
-  BASE_IMAGES_PATH : "http://sahosoftweb.com/test/images/",
-  BASE_USERS_IMAGES_PATH : "http://sahosoftweb.com/test/users/"
+  BASE_API_PATH : "http://sahosoftweb.com/api/",
+  BASE_IMAGES_PATH : "http://sahosoftweb.com/images/",
+  BASE_USERS_IMAGES_PATH : "http://sahosoftweb.com/users/"
 };
 
 /*
